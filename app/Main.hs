@@ -49,4 +49,5 @@ readNum c chars =
     Num (read (c : digs)) : parseString cs'
     where 
         (digs, cs') = span isDigit chars     --split string into 2 strings (a -> Bool) -> [a] -> ([a],[a])
+        
     
